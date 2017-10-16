@@ -1,5 +1,5 @@
 options:
-  # 自动更新
+  # 自动更新 (建议关闭)
   auto-update: false
   # 装备的更新周期
   armor-update-interval: 10
@@ -9,7 +9,7 @@ options:
   print-out-loading: false
   # 是否在加载时输出 获取 Github 数据信息
   print-out-github-data-retrieving: false
-  # 是否启用装备的特别效果
+  # 是否启用装备的特别效果 (例如萤石头盔的夜视)
   enable-armor-effects: true
   # 插件前缀
   prefix: '&a&lSlimefun &7>'
@@ -30,6 +30,7 @@ guide:
   default-view-book: false
 URID:
   info-delay: 3000
+  # 自定义 Ticker 延迟
   custom-ticker-delay: 12
   # 是否启用 Tickers
   enable-tickers: true
