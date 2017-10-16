@@ -80,10 +80,10 @@ public class SlimefunGuide {
 			return new CustomItem(new MaterialData(Material.ENCHANTED_BOOK), "&a粘液科技指南 &7(书与笔版式)", "", "&e右键 &8\u21E8 &7浏览粘液科技物品", "&eShift + 右键 &8\u21E8 &7打开设置 / 制作人员页面");
 		}
 		case CHEAT_SHEET: {
-			return new CustomItem(new MaterialData(Material.ENCHANTED_BOOK), "&a粘液科技指南 &7(作弊版式)", "", "&4&lOnly openable by Admins", "", "&eRight Click &8\u21E8 &7Browse Items", "&eShift + Right Click &8\u21E8 &7Open Settings / Credits");
+			return new CustomItem(new MaterialData(Material.ENCHANTED_BOOK), "&a粘液科技指南 &7(作弊版式)", "", "&4&l仅限管理员使用!", "", "&e右键 &8\u21E8 &7浏览粘液科技物品", "&eShift + 右键 &8\u21E8 &7打开设置 / 制作人员页面");
 		}
 		case CHEST: {
-			return new CustomItem(new MaterialData(Material.ENCHANTED_BOOK), "&a粘液科技指南 &7(箱子版式)", "", "&eRight Click &8\u21E8 &7Browse Items", "&eShift + Right Click &8\u21E8 &7Open Settings / Credits");
+			return new CustomItem(new MaterialData(Material.ENCHANTED_BOOK), "&a粘液科技指南 &7(箱子版式)", "", "&e右键 &8\u21E8 &7浏览粘液科技物品", "&eShift + 右键 &8\u21E8 &7打开设置 / 制作人员页面");
 		}
 		default:
 			return null;
@@ -103,7 +103,7 @@ public class SlimefunGuide {
 	
 	@SuppressWarnings("deprecation")
 	public static void openSettings(Player p, final ItemStack guide) {
-		final ChestMenu menu = new ChestMenu("Settings / Info");
+		final ChestMenu menu = new ChestMenu("设置 & 关于");
 		
 		menu.addMenuOpeningHandler(new MenuOpeningHandler() {
 			
