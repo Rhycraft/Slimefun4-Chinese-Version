@@ -77,13 +77,13 @@ public class SlimefunGuide {
 	public static ItemStack getItem(BookDesign design) {
 		switch (design) {
 		case BOOK: {
-			return new CustomItem(new MaterialData(Material.ENCHANTED_BOOK), "&aSlimefun Guide &7(Book GUI)", "", "&eRight Click &8\u21E8 &7Browse Items", "&eShift + Right Click &8\u21E8 &7Open Settings / Credits");
+			return new CustomItem(new MaterialData(Material.ENCHANTED_BOOK), "&a粘液科技指南 &7(书与笔版式)", "", "&e右键 &8\u21E8 &7浏览粘液科技物品", "&eShift + 右键 &8\u21E8 &7打开设置 / 制作人员页面");
 		}
 		case CHEAT_SHEET: {
-			return new CustomItem(new MaterialData(Material.ENCHANTED_BOOK), "&cSlimefun Guide &4(Cheat Sheet)", "", "&4&lOnly openable by Admins", "", "&eRight Click &8\u21E8 &7Browse Items", "&eShift + Right Click &8\u21E8 &7Open Settings / Credits");
+			return new CustomItem(new MaterialData(Material.ENCHANTED_BOOK), "&a粘液科技指南 &7(作弊版式)", "", "&4&lOnly openable by Admins", "", "&eRight Click &8\u21E8 &7Browse Items", "&eShift + Right Click &8\u21E8 &7Open Settings / Credits");
 		}
 		case CHEST: {
-			return new CustomItem(new MaterialData(Material.ENCHANTED_BOOK), "&aSlimefun Guide &7(Chest GUI)", "", "&eRight Click &8\u21E8 &7Browse Items", "&eShift + Right Click &8\u21E8 &7Open Settings / Credits");
+			return new CustomItem(new MaterialData(Material.ENCHANTED_BOOK), "&a粘液科技指南 &7(箱子版式)", "", "&eRight Click &8\u21E8 &7Browse Items", "&eShift + Right Click &8\u21E8 &7Open Settings / Credits");
 		}
 		default:
 			return null;
