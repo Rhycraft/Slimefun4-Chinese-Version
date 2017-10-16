@@ -31,7 +31,7 @@ public class Files
             System.err.println("Slimefun 检测到你的文件已过期或不存在.);
             System.err.println("我们创建了新的文件以确保 Slimefun 可以工作.");
             System.err.println("如果您曾经使用过粘液科技, 你原来的设置将会丢失");
-            System.err.println("但 Slimefun 会正常工作 :)");
+            System.err.println("但 Slimefun 会正常工作了 :)");
             System.err.println("        ");
             System.err.println("################################################");
             System.err.println("################################################");
