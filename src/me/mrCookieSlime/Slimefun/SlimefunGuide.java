@@ -96,7 +96,7 @@ public class SlimefunGuide {
 	}
 	
 	public static ItemStack getDeprecatedItem(boolean book) {
-		return new CustomItem(new MaterialData(Material.ENCHANTED_BOOK), "&eSlimefun Guide &7(Right Click)", (book ? "": "&2"), "&rThis is your basic Guide for Slimefun", "&rYou can see all Items added by this Plugin", "&ror its Addons including their Recipes", "&ra bit of information and more");
+		return new CustomItem(new MaterialData(Material.ENCHANTED_BOOK), "&e粘液科技指南 &7(右键打开)", (book ? "": "&2"), "&r这是粘液科技的基础指南", "&r你可以浏览此插件内所有的物品", "&r以及扩展里的所有物品和合成表";
 	}
 	
 	private static final int[] slots = new int[] {0, 2, 3, 5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35};
@@ -127,7 +127,7 @@ public class SlimefunGuide {
 		
 		if (SlimefunManager.isItemSimiliar(guide, getItem(BookDesign.CHEST), true)) {
 			if (p.hasPermission("slimefun.cheat.items")) {
-				menu.addItem(19, new CustomItem(new MaterialData(Material.CHEST), "&7Guide Layout: &eChest GUI", "", "&aChest GUI", "&7Book GUI", "&7Cheat Sheet", "", "&e Click &8\u21E8 &7Change Layout"));
+				menu.addItem(19, new CustomItem(new MaterialData(Material.CHEST), "&7指南样式: &e箱子界面", "", "&a箱子界面", "&7书与笔界面", "&7作弊模式", "", "&e 单击 &8\u21E8 &7单击修改样式"));
 				menu.addMenuClickHandler(19, new MenuClickHandler() {
 					
 					@Override
@@ -139,7 +139,7 @@ public class SlimefunGuide {
 				});
 			}
 			else {
-				menu.addItem(19, new CustomItem(new MaterialData(Material.CHEST), "&7Guide Layout: &eChest GUI", "", "&aChest GUI", "&7Book GUI", "", "&e Click &8\u21E8 &7Change Layout"));
+				menu.addItem(19, new CustomItem(new MaterialData(Material.CHEST), "&7指南样式: &e箱子界面", "", "&7书与笔界面", "&7作弊模式", "", "&e 单击 &8\u21E8 &7修改样式"));
 				menu.addMenuClickHandler(19, new MenuClickHandler() {
 					
 					@Override
@@ -153,7 +153,7 @@ public class SlimefunGuide {
 		}
 		else if (SlimefunManager.isItemSimiliar(guide, getItem(BookDesign.BOOK), true)) {
 			if (p.hasPermission("slimefun.cheat.items")) {
-				menu.addItem(19, new CustomItem(new MaterialData(Material.CHEST), "&7指南样式: &e书与笔 GUI", "", "&7箱子 GUI", "&a书与笔 GUI", "&7作弊界面", "", "&e Click &8\u21E8 &7Change Layout"));
+				menu.addItem(19, new CustomItem(new MaterialData(Material.CHEST), "&7指南样式: &e书与笔 GUI", "", "&7箱子 GUI", "&a书与笔 GUI", "&7作弊界面", "", "&e 单击 &8\u21E8 &7修改样式"));
 				menu.addMenuClickHandler(19, new MenuClickHandler() {
 					
 					@Override
@@ -209,7 +209,7 @@ public class SlimefunGuide {
 					p.closeInventory();
 					p.sendMessage("");
 					p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7&ohttps://github.com/TheBusyBiscuit/Slimefun4"));
-                    p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&c[NEW] &7&o汉化版源码: https://github.com/StarWishsama/Slimefun4-Translated"));
+                    p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&7&o汉化版源码: https://github.com/StarWishsama/Slimefun4-Translated"));
 					p.sendMessage("");
 					return false;
 				}
