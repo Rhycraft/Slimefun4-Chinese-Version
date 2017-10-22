@@ -4584,10 +4584,14 @@ _L2:
         directions = Arrays.asList(new BlockFace[] {
             BlockFace.NORTH, BlockFace.EAST, BlockFace.SOUTH, BlockFace.WEST
         });
+        // 此为机器人无法破坏的方块名单，您可以根据自身需要来修改 :)
         blockblacklist = new ArrayList();
         blockblacklist.add(Material.BEDROCK);
         blockblacklist.add(Material.BARRIER);
         blockblacklist.add(Material.ENDER_PORTAL_FRAME);
+        blockblacklist.add(Material.CHEST);
+        blockblacklist.add(Material.FURNACE);
+        blockblacklist.add(Material.BURNING_FURNACE);
     }
 
 
